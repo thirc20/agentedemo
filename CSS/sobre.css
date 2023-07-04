@@ -1,0 +1,53 @@
+p{
+    font-family: 'TT Hoves Pro Trial DemiBold';
+    padding: 15px;
+    text-align: justify;
+    height: auto;
+    color: white;
+    width: 50%;
+}
+
+Strong{
+    color: #393939;
+    font-family: 'TT Hoves Pro Trial DemiBold';
+}
+
+#quemSomos{
+    margin-top: 8vh;
+}
+
+.ssss{
+    border-radius: 7px;
+    -webkit-box-shadow: 10px 10px 55px -43px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 55px -43px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 55px -43px rgba(0,0,0,0.75);
+}
+
+.divBody{
+    height: auto; 
+    text-align: center; 
+    margin: 0 25%;
+}
+
+.imgProp{
+    max-width: 48%; 
+    width: auto; 
+    height: auto;
+}
+
+@media screen and (min-width: 414px) {
+    @media screen and (max-width: 1279px) {
+        .divBody>p{
+            width: 95%;
+        }
+        .divBody{
+            margin: 0;
+        }
+        .imgProp{
+            max-width: 89%; 
+            width: auto; 
+            height: auto;
+            margin: 0 3vw
+        }
+    }
+}

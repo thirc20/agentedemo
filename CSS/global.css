@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "vag-rounded-bt";
+  src: url("../FONT/vag-rounded-bt.ttf");
+}
+
+@font-face {
+  font-family: "TT Hoves Pro Trial DemiBold";
+  src: url("../FONT/TT\ Hoves\ Pro\ Trial\ DemiBold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "vag-rounded-bt";
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+    background: radial-gradient(
+        farthest-corner at 0% 83%,
+        #f89b37 0%,
+        #ec7e57 25%,
+        #d8396e 75%,
+        #b50097 90%
+      );
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+main{
+    width: auto;
+    height: 100vh;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bgMenu{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+}
+
+#marca{
+    color: white;
+    text-align: center;
+    margin-top: 45vh;
+    bottom: 50%;
+    position: relative;
+    font-size: 50pt;
+    animation-duration: 1s;
+}
+
+.bgMenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    animation-duration: 1s;
+    position: absolute;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 96vw auto;
+    height: auto;
+    margin-left: 5px;
+}
+
+.openMenu{
+    height: 6vh;
+    
+}
+
+.opMenu{
+    margin-left: 5px;
+}
+.menuMarca{
+    height: 6vh;
+}
+
+.here{
+    border: 1px solid orangered;
+    height: auto;
+    padding: 15px;
+    margin: 1px;
+    border-radius: 7px 0 0 7px;
+}
+
+.degrade {
+    background-image: radial-gradient(
+      farthest-corner at 0% 83%,
+      #f89b37 0%,
+      #ec7e57 25%,
+      #d8396e 75%,
+      #b50097 90%
+    );
+  
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    -webkit-text-fill-color: transparent;
+  }
+
+.iconProd{
+    font-size: 45pt;
+}
+
+.section{
+    height: auto;
+}
+
+#section2{
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#section3{
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+@media screen and (min-width: 1920px) {
+    .iconProd{
+        font-size: 37pt;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .iconProd{
+        font-size: 30pt;
+        margin-top: 0.5vh;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .iconProd{
+        font-size: 25pt;
+        margin-top: 0.5vh;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    @media screen and (max-width: 1279px) {
+        .menu{
+            grid-template-columns: 90vw auto;
+        }
+        .iconProd{
+            font-size: 37pt;
+        }
+        footer{
+            margin-top: 5vh;
+            padding-bottom: 15vh;
+        }
+    }
+}

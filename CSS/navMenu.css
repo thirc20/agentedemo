@@ -1,0 +1,50 @@
+.navMenu{
+    background: white;
+    width: 150px;
+    height: 25vh;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    right: 0;
+    animation-duration: 0.5s;
+}
+.menuNav{
+    width: 100%;
+    height: 22vh;
+    display: block;
+    padding-top: 5%;
+}
+.opMenu{
+    width: 100%;
+    height: 6vh;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navMenuOpen{
+    background: white;
+    width: 150px;
+    height: 25vh;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    right: 0;
+    animation-duration: 0.5s;
+    margin-right: 0%;
+}
+
+@keyframes openMenuNav {
+    0%{
+        margin-right: -100%
+    }
+    100%{
+        margin-right: 0%;
+    }
+}
+
+@keyframes closeMenuNav {
+    0%{
+        margin-right: 0%
+    }
+    100%{
+        margin-right: -100%;
+    }
+}

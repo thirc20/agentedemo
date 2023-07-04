@@ -1,0 +1,82 @@
+.sectionCards {
+    height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 35vh;
+}
+
+.card {
+  width: 30vw;
+  height: 30vh;
+
+  background-color: white;
+  border-radius: 8px;
+
+  margin: 0 36px 15px;
+
+  -webkit-box-shadow: 8px 8px 10px 5px rgba(133,133,133,0.18);
+  box-shadow: 8px 8px 10px 5px rgba(133,133,133,0.18);
+}
+
+.headerCard {
+  height: 7vh;
+  border-bottom: 1px solid silver;
+  display: grid;
+  grid-template-columns: 3vw 50vh;
+
+  padding-left: 0.3vw;
+}
+
+.bodyCard {
+  padding: 1vh;
+  height: 60%;
+}
+
+.footerCard {
+  border-top: 1px solid silver;
+  padding-top: 13px;
+  height: 5vh;
+  text-align: center;
+}
+
+.btnCard {
+  font-size: 13pt;
+}
+
+
+@media screen and (min-width: 1366px) {
+    .card{
+        margin: 0 24px 15px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .card{
+        margin: 0 20px 15px;
+        height: 32vh;
+    }
+    .headerCard{
+        height: 8vh;
+        grid-template-columns: 4.5vw 50vh;
+    }
+}
+
+@media screen and (min-width: 414px) {
+  @media screen and (max-width: 1279px) {
+      .menu{
+          grid-template-columns: 90vw auto;
+      }
+      .sectionCards{
+          display: block;
+      }
+      .card {
+          width: 80vw;
+          height: 35vh;
+      }
+      .headerCard{
+          height: 8vh;
+          grid-template-columns: 12vw 33vh;
+      }
+        
+    }
+ }

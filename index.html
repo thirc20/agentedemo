@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agente Demo</title>
+
+    <!-- boxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remixIcons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/card.css" />
+    <link rel="stylesheet" href="./CSS/titles.css" />
+    <link rel="stylesheet" href="./CSS/jobsImages.css" />
+    <link rel="stylesheet" href="./CSS/animations.css" />
+    <link rel="stylesheet" href="./CSS/slide.css" />
+    <link rel="stylesheet" href="./CSS/navMenu.css" />
+    <style>
+      a{
+        text-decoration: none;
+      }
+
+      a:visited{
+        color: none;
+      }
+    </style>
+  </head>
+  <body onload="loadSite()">
+    <main onscroll="fixedMenu(); enterJobs()">
+      
+      <div class="bgMenu">
+        <h1 class="menu"><p class="menuMarca degrade">agente</p> <div class="openMenu unvisible"><i class="ri-menu-fold-line degrade" onclick="openDropMenu()"></i></div>
+        </div>
+
+      <div id="section1" class="section">
+        <h1 id="marca" class="visible">agente</h1>
+      </div>  
+        
+      <nav class="navMenu" style="display: none;">
+        <ul class="menuNav">
+          <li class="opMenu "><a href="../index.html" class="degrade">Home</a></li>
+          <li class="opMenu here"><a class="degrade" href="./PAGES/sobre.html" style="text-decoration: none;">Sobre</a></li>
+          <li class="opMenu"><a href="" class="degrade">Apresentação</a></li>
+          <a><i class="ri-close-circle-line iconProd degrade" id="closeNav" onclick="closeDropMenu()"></i></a>
+        </ul>
+      </nav>
+
+      <div class="section" id="section2">
+        <h1 class="title">O que podemos fazer por você?</h1>
+        <div class="sectionCards" id="card1">
+          <div class="card">
+            <div class="headerCard">
+              <i class="ri-cloud-line iconProd degrade"></i>
+              <h1 class="degrade titleProd">Gestão de Redes Sociais</h1>
+            </div>
+
+            <div class="bodyCard">
+              <p class="descProd degrade">
+                Criamos ou redesenhamos toda a identidade visual da sua rede
+                social para alinhar e cativar junto do seu público alvo, e
+                assim, trazer mais clientes alinhados com a filosofia do seu
+                negócio.
+              </p>
+            </div>
+
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="headerCard">
+              <i class="ri-play-circle-line degrade iconProd"></i>
+              <h1 class="degrade titleProd">Cobertura de Eventos</h1>
+            </div>
+            <div class="bodyCard">
+              <p class="descProd degrade">
+                Cobrimos todos os tipos de eventos, desde um coffe meeting, até
+                mesmo casamento, evento político, empresarial e etc. Buscando
+                registrar os melhores momentos.
+              </p>
+            </div>
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="headerCard">
+              <i class="ri-global-line degrade iconProd"></i>
+              <h1 class="degrade titleProd">Criação e Gestão de Web Sites</h1>
+            </div>
+            <div class="bodyCard">
+              <p class="descProd degrade">
+                Cobrimos todos os tipos de eventos, desde um coffe meeting, até
+                mesmo casamento, evento político, empresarial e etc. Buscando
+                registrar os melhores momentos.
+              </p>
+            </div>
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="headerCard">
+              <i class="ri-money-dollar-circle-line iconProd degrade"></i>
+              <h1 class="degrade titleProd">Gestão de Anuncios e Campanhas</h1>
+            </div>
+            <div class="bodyCard">
+              <p class="descProd degrade">
+                Realizamos toda a gestão de anuncios da página, sendo direcionado para reconhecimento, venda, propagando e etc.
+                Exclusiva para as Mídias Digitais, fazendo parte de forma estratégica da gestão de tráfego e softwares da Agência.
+              </p>
+            </div>
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="headerCard"><i class="ri-play-circle-line iconProd degrade"></i><p class="degrade titleProd">Produção de Vídeos</p> </div>
+            <div class="bodyCard"><p class="descProd degrade">
+              Produção completa de vídeos, seja do tipo institucional, comercial, para midias sociais e etc. Sempre tentando mostrar todo o seu negocio no mundo online.            </p> </div>
+
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="headerCard"><i class="ri-markup-line iconProd degrade"></i><p class="titleProd degrade">Criação e Padronização das Redes Sociais</p></div>
+            <div class="bodyCard">
+              <p class="descProd degrade">Criação e padronização da identidade visual de todas as redes sociais como instagram, facebook, linkedin e etc. Trazendo sempre as cores da empresa e casando com o momento em que a empresa vive, obtendo assim, melhor qualidade dos mateirais.</p>
+            </div>
+            <div class="footerCard">
+              <a class="degrade btnCard" onclick="alert()">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section3">
+        <h1 class="title titleJobs">Um Pouco de Nossos Trabalhos</h1>
+        <div class="slide">
+            <img src="./IMG/IGR.png" class="imagesJobs" />
+            <img src="./IMG/NOR.png" class="imagesJobs" />
+            <img src="./IMG/OL.png" class="imagesJobs" />
+            <img src="./IMG/POP.png" class="imagesJobs" />
+        </div>
+        <div class="jobsCards">
+          <img src="./IMG/IGR.png" class="imagesJobs" />
+          <img src="./IMG/NOR.png" class="imagesJobs" />
+          <img src="./IMG/OL.png" class="imagesJobs" />
+          <img src="./IMG/POP.png" class="imagesJobs" />
+        </div>
+        <div class="jobsStories">
+          <img src="./IMG/FD_ST.png" class="storiesJobs" />
+          <img src="./IMG/GOD_ST.png" class="storiesJobs" />
+          <img src="./IMG/SEM_ST.png" class="storiesJobs" />
+          <img src="./IMG/RON_ST.png" class="storiesJobs" />
+        </div>
+      </div>
+      <footer style="height: 3vh; color: white; text-align: center">
+        &copy;Agente Marketing e Publicidade
+      </footer>
+    </main>
+
+    <script src="JS/global.js"></script>
+    <script src="JS/slide.js"></script>
+  </body>
+</html>

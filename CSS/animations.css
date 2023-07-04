@@ -1,0 +1,35 @@
+@keyframes enter {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes close {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes openMenuNav {
+    0%{
+        margin-right: -100%
+    }
+    100%{
+        margin-right: 0%;
+    }
+}
+
+@keyframes closeMenuNav {
+    0%{
+        margin-right: 0%
+    }
+    100%{
+        margin-right: -100%;
+    }
+}

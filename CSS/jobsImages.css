@@ -1,0 +1,83 @@
+.jobsStories{
+    overflow: hidden;
+}
+
+.slide{
+    display: none;
+}
+
+.imagesJobs{
+    max-width: 23%;
+    width: auto;
+    height: auto;
+}
+
+.storiesJobs{
+    max-width: 60%;
+    width: auto;
+    height: auto;
+    margin-right: -18vw;
+    margin-left: -18vw;
+}
+
+.jobsCards{
+    height: auto;
+}
+
+.jobsStories{
+    height: auto;
+}
+
+@media screen and (min-width: 1920px) {
+    .imagesJobs{
+        max-width: 30%;
+        margin-left: -3vw;
+        margin-right: -3vw;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .imagesJobs{
+        max-width: 39%;
+        margin-left: -6vw;
+        margin-right: -9vw;
+    }
+
+    .storiesJobs{
+        max-width: 70%;
+        width: auto;
+        height: auto;
+        margin-right: -27vw;
+        margin-left: -20vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .imagesJobs{
+        max-width: 40%;
+        margin-left: -6vw;
+        margin-right: -10.5vw;
+    }
+
+    .storiesJobs{
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        margin-right: -32vw;
+        margin-left: -25vw;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    @media screen and (max-width: 1279px) {
+        .jobsCards{
+            display: none;
+        }
+        .storiesJobs{
+            display: none;
+        }
+        .slide{
+            display: block;
+        }    
+    }
+}

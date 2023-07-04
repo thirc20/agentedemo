@@ -1,0 +1,67 @@
+.title{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-family: 'TT Hoves Pro Trial DemiBold';
+    height: 8vh;
+}
+
+.titleProd{
+    padding-top: 1.3vh;
+}
+
+.descProd{
+    height: auto;
+    font-size: 15pt;
+}
+
+.titleJobs{
+    margin-top: 15vh;
+}
+
+@media screen and (min-width: 1921px) {
+    .titleProd{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .titleProd{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .titleProd{
+        font-size: 18pt;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .titleProd{
+        font-size: 15pt;
+    }
+    .descProd{
+        font-size: 13pt;
+    }
+}
+
+@media screen and (min-width: 414px) {
+  
+    @media screen and (max-width: 1279px) {
+        .titleProd{
+            padding-top: 1.8vh;
+            font-size: 14pt;
+        }
+        .descProd{
+            font-size: 12pt;
+        }
+        .title{
+            font-size: 20pt;
+            margin: 15px;
+        }
+        .titleJobs{
+            margin-top: 0;
+        }
+    }
+}
