@@ -1,4 +1,4 @@
-.navMenu{
+/* .navMenu{
     background: white;
     width: 150px;
     height: 25vh;
@@ -47,4 +47,42 @@
     100%{
         margin-right: -100%;
     }
-}
+} */
+
+.navMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #FFF;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .navMenu.open {
+    transform: translateX(0);
+  }
+  
+  .menuNav {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .opMenu {
+    margin-bottom: 10px;
+    height: auto;
+  }
+  
+  .degrade {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }

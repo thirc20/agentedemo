@@ -15,3 +15,7 @@ async function closeDropMenu() {
         navMenu.style.display = 'none'
     }, 300);
 }
+
+let openHome = async () => {
+    window.location.href = '../index.html'
+}

@@ -102,22 +102,24 @@ let enterJobs = async () => {
 
 }
 
-async function openDropMenu() {
-    console.log('ooo')
-    let navMenu = document.querySelector('.navMenu')
 
-    navMenu.classList.remove('navMenu')
-    navMenu.style.display = 'block'
-    navMenu.style.animationName = 'openMenuNav'
-    navMenu.classList.add('navMenuOpen')
-}
 
-async function closeDropMenu() {
-    console.log('ooo')
-    let navMenu = document.querySelector('.navMenu')
+// async function openDropMenu() {
+//     console.log('ooo')
+//     let navMenu = document.querySelector('.navMenu')
 
-    navMenu.style.animationName = 'closeMenuNav'
-    setTimeout(() => {
-        navMenu.style.display = 'none'
-    }, 300);
-}
+//     navMenu.classList.remove('navMenu')
+//     navMenu.style.display = 'block'
+//     navMenu.style.animationName = 'openMenuNav'
+//     navMenu.classList.add('navMenuOpen')
+// }
+
+// async function closeDropMenu() {
+//     console.log('ooo')
+//     let navMenu = document.querySelector('.navMenu')
+
+//     navMenu.style.animationName = 'closeMenuNav'
+//     setTimeout(() => {
+//         navMenu.style.display = 'none'
+//     }, 300);
+// }
